@@ -8,9 +8,10 @@ import org.hibernate.annotations.GenericGenerator;
 @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
 public class Account extends BaseEntity{
     @Column(name = "customer_id")
-    @Id
     private Long customerId;
 
+    @Column(name="account_number")
+    @Id
     private Long accountNumber;
 
     private String accountType;

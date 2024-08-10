@@ -6,6 +6,7 @@ import com.demobank.demobank.dto.CustomerDto;
 import com.demobank.demobank.dto.ResponseDto;
 import com.demobank.demobank.entity.Customer;
 import lombok.AllArgsConstructor;
+import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -32,4 +33,30 @@ public class AccountsController {
     return ResponseEntity.status(HttpStatus.OK)
             .body(customerDto);
     }
+
+    @PutMapping(path="/update")
+    public ResponseEntity<ResponseDto> updateAccount(@RequestBody CustomerDto customerDto) {
+        boolean isUpdated = iAccountService.updateAccount(customerDto);
+
+        if(isUpdated) {
+            return ResponseEntity.status(HttpStatus.OK)
+                    .body(new ResponseDto(AccountsConstants.STATUS_200, AccountsConstants.MESSAGE_200));
+        } else {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body((new ResponseDto(AccountsConstants.STATUS_500, AccountsConstants.MESSAGE_500)));
+        }
+    }
+
+    @DeleteMapping(path = "/delete")
+    public ResponseEntity<ResponseDto> deleteAccountDetails(@RequestParam String mobileNumber) {
+        boolean isDeleted = iAccountService.deleteAccount(mobileNumber);
+        if(isDeleted) {
+            return ResponseEntity.status(HttpStatus.OK)
+                    .body(new ResponseDto(AccountsConstants.STATUS_200, AccountsConstants.MESSAGE_200));
+        } else {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body((new ResponseDto(AccountsConstants.STATUS_500, AccountsConstants.MESSAGE_500)));
+        }
+    }
+
 }
