@@ -1,4 +1,4 @@
-package com.demobank.demobank.constants;
+package com.demobank.accounts.constants;
 
 public class AccountsConstants {
     private AccountsConstants(){}

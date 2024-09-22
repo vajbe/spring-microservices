@@ -1,8 +1,7 @@
-package com.demobank.demobank.entity;
+package com.demobank.accounts.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor

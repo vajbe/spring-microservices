@@ -1,4 +1,4 @@
-package com.demobank.demobank;
+package com.demobank.accounts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

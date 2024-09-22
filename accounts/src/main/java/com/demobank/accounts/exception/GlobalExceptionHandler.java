@@ -1,6 +1,6 @@
-package com.demobank.demobank.exception;
+package com.demobank.accounts.exception;
 
-import com.demobank.demobank.dto.ErrorResponseDto;
+import com.demobank.accounts.dto.ErrorResponseDto;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;

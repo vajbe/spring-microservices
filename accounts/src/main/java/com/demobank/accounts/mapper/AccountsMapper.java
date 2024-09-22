@@ -1,7 +1,7 @@
-package com.demobank.demobank.mapper;
+package com.demobank.accounts.mapper;
 
-import com.demobank.demobank.dto.AccountDto;
-import com.demobank.demobank.entity.Account;
+import com.demobank.accounts.dto.AccountDto;
+import com.demobank.accounts.entity.Account;
 
 public class AccountsMapper {
     public static AccountDto mapToAccountsDto(Account accounts, AccountDto accountsDto) {

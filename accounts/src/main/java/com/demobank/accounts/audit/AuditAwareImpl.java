@@ -1,6 +1,5 @@
-package com.demobank.demobank.audit;
+package com.demobank.accounts.audit;
 
-import org.springframework.boot.actuate.audit.listener.AuditApplicationEvent;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.stereotype.Component;
 

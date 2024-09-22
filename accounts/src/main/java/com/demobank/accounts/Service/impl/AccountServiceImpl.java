@@ -1,23 +1,20 @@
-package com.demobank.demobank.Service.impl;
+package com.demobank.accounts.Service.impl;
 
-import com.demobank.demobank.Service.IAccountService;
-import com.demobank.demobank.constants.AccountsConstants;
-import com.demobank.demobank.dto.AccountDto;
-import com.demobank.demobank.dto.CustomerDto;
-import com.demobank.demobank.entity.Account;
-import com.demobank.demobank.entity.Customer;
-import com.demobank.demobank.exception.CustomerAlreadyExistsException;
-import com.demobank.demobank.exception.ResourceNotFoundException;
-import com.demobank.demobank.mapper.AccountsMapper;
-import com.demobank.demobank.mapper.CustomerMapper;
-import com.demobank.demobank.repository.AccountRepository;
-import com.demobank.demobank.repository.CustomerRepository;
+import com.demobank.accounts.Service.IAccountService;
+import com.demobank.accounts.constants.AccountsConstants;
+import com.demobank.accounts.dto.AccountDto;
+import com.demobank.accounts.dto.CustomerDto;
+import com.demobank.accounts.entity.Account;
+import com.demobank.accounts.entity.Customer;
+import com.demobank.accounts.exception.CustomerAlreadyExistsException;
+import com.demobank.accounts.exception.ResourceNotFoundException;
+import com.demobank.accounts.mapper.AccountsMapper;
+import com.demobank.accounts.mapper.CustomerMapper;
+import com.demobank.accounts.repository.AccountRepository;
+import com.demobank.accounts.repository.CustomerRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.Random;
 

@@ -1,6 +1,6 @@
-package com.demobank.demobank.repository;
+package com.demobank.accounts.repository;
 
-import com.demobank.demobank.entity.Customer;
+import com.demobank.accounts.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,6 @@
-package com.demobank.demobank.Service;
+package com.demobank.accounts.Service;
 
-import com.demobank.demobank.dto.CustomerDto;
-import com.demobank.demobank.entity.Customer;
+import com.demobank.accounts.dto.CustomerDto;
 
 public interface IAccountService {
     void createAccount(CustomerDto customerDto);

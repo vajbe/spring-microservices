@@ -1,11 +1,10 @@
-package com.demobank.demobank.controller;
+package com.demobank.accounts.controller;
 
-import com.demobank.demobank.Service.IAccountService;
-import com.demobank.demobank.constants.AccountsConstants;
-import com.demobank.demobank.dto.CustomerDto;
-import com.demobank.demobank.dto.ErrorResponseDto;
-import com.demobank.demobank.dto.ResponseDto;
-import com.demobank.demobank.entity.Customer;
+import com.demobank.accounts.Service.IAccountService;
+import com.demobank.accounts.constants.AccountsConstants;
+import com.demobank.accounts.dto.CustomerDto;
+import com.demobank.accounts.dto.ErrorResponseDto;
+import com.demobank.accounts.dto.ResponseDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -14,10 +13,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
-import org.apache.coyote.Response;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
