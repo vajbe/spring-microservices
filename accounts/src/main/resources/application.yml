@@ -26,12 +26,6 @@ spring:
   config:
     import: "optional:configserver:http://localhost:8071/"  # External config server
 
-  rabbitmq:
-    host: "localhost"                         # RabbitMQ settings
-    port: 5672
-    username: "guest"
-    password: "guest"
-
 management:
   endpoints:
     web:
